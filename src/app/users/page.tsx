@@ -29,7 +29,7 @@ export default function UsersPage() {
     setName('');
     setEmail('');
   };
-
+//test 
   const updateUser = async (id: string, name: string, email: string) => {
     await supabase.from('users').update({ name, email }).eq('id', id);
     fetchUsers();
